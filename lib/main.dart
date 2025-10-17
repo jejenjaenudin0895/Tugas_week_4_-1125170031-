@@ -67,10 +67,22 @@ void _incrementCounter() {
 
 @override
 Widget build (BuildContext context){
-  return Scaffold(
+  return Scaffold(  
   appBar:AppBar(
     backgroundColor: Theme.of(context).colorScheme.inversePrimary,
      title: Text(widget.title), //gunakan title dinamis
+     
+      actions: [
+          IconButton(
+            icon: const Icon(Icons.settings),
+            tooltip: 'Pengaturan',
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('Tombol Pengaturan ditekan')),
+              );
+            },
+          ),
+        ], 
     ),
     body:Center(
       child: Column(
