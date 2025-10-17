@@ -86,6 +86,21 @@ Widget build (BuildContext context){
           ),
         ], 
     ),
+     drawer: Drawer(
+        child: ListView(
+          children: const [
+            DrawerHeader(
+              decoration: BoxDecoration(color: Colors.blue),
+              child: Text(
+                'Menu Navigasi',
+                style: TextStyle(color: Colors.white, fontSize: 20),
+              ),
+            ),
+            ListTile(title: Text('Profil')),
+            ListTile(title: Text('Pengaturan')),
+          ],
+        ),
+      ),
     body:Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
