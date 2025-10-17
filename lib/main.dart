@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Title Aplikasi", // Judul Aplikasi
+      debugShowCheckedModeBanner: false, // 🔹 untuk menghilangkan tulisan DEBUG
+
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange
           ),
