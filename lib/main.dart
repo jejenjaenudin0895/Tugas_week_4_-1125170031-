@@ -100,8 +100,8 @@ Widget build (BuildContext context){
         ),
         floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
-        tooltip: 'Tambah',
-        child: const Icon(Icons.add),
+        tooltip: 'Tampilan Berita Acak',
+        child: const Icon(Icons.shuffle),
         ),
     );
     }
